@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<title>Travel is my passion</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="styles.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+<style></style>
+<script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> <a class="navbar-brand" href="#"><span class="service-icon rounded-circle mx-auto"> <i class="icon-globe"></i> </span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item active"> <a class="nav-link" href="#">Destinations</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#">People</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="landscapes.html">Landscapes</a></li>
+    </ul>
+  </div>
+</nav>
+<main role="main" class="container">
+  <div class="jumbotron">
+    <h1>The world is soooo big!</h1>
+    <p class="lead">Upon making this page I just realized that we have way longer journey ahead of us than behind :-)</p>
+    <p class="lead">Here is the map of the <strong>countries we've visited</strong> so far:</p>
+    <div id="mapdiv" class="mapdiv"></div>
+
+<script type="text/javascript">
+var map = AmCharts.makeChart("mapdiv",{
+type: "map",
+theme: "dark",
+projection: "mercator",
+panEventsEnabled : true,
+backgroundColor : "#535364",
+backgroundAlpha : 1,
+zoomControl: {
+zoomControlEnabled : true
+},
+dataProvider : {
+map : "worldHigh",
+getAreasFromMap : true,
+areas :
+[
+	{
+		"id": "AD",
+		"showAsSelected": true
+	},
+	{
+		"id": "AT",
+		"showAsSelected": true
+	},
+	{
+		"id": "BE",
+		"showAsSelected": true
+	},
+	{
+		"id": "BG",
+		"showAsSelected": true
+	},
+	{
+		"id": "HR",
+		"showAsSelected": true
+	},
+	{
+		"id": "CZ",
+		"showAsSelected": true
+	},
+	{
+		"id": "DK",
+		"showAsSelected": true
+	},
+	{
+		"id": "EE",
+		"showAsSelected": true
+	},
+	{
+		"id": "FI",
+		"showAsSelected": true
+	},
+	{
+		"id": "FR",
+		"showAsSelected": true
+	},
+	{
+		"id": "DE",
+		"showAsSelected": true
+	},
+	{
+		"id": "HU",
+		"showAsSelected": true
+	},
+	{
+		"id": "IE",
+		"showAsSelected": true
+	},
+	{
+		"id": "IT",
+		"showAsSelected": true
+	},
+	{
+		"id": "LV",
+		"showAsSelected": true
+	},
+	{
+		"id": "LI",
+		"showAsSelected": true
+	},
+	{
+		"id": "LT",
+		"showAsSelected": true
+	},
+	{
+		"id": "LU",
+		"showAsSelected": true
+	},
+	{
+		"id": "MT",
+		"showAsSelected": true
+	},
+	{
+		"id": "MC",
+		"showAsSelected": true
+	},
+	{
+		"id": "NL",
+		"showAsSelected": true
+	},
+	{
+		"id": "NO",
+		"showAsSelected": true
+	},
+	{
+		"id": "PL",
+		"showAsSelected": true
+	},
+	{
+		"id": "PT",
+		"showAsSelected": true
+	},
+	{
+		"id": "RO",
+		"showAsSelected": true
+	},
+	{
+		"id": "RU",
+		"showAsSelected": true
+	},
+	{
+		"id": "SM",
+		"showAsSelected": true
+	},
+	{
+		"id": "RS",
+		"showAsSelected": true
+	},
+	{
+		"id": "SK",
+		"showAsSelected": true
+	},
+	{
+		"id": "SI",
+		"showAsSelected": true
+	},
+	{
+		"id": "ES",
+		"showAsSelected": true
+	},
+	{
+		"id": "SE",
+		"showAsSelected": true
+	},
+	{
+		"id": "CH",
+		"showAsSelected": true
+	},
+	{
+		"id": "TR",
+		"showAsSelected": true
+	},
+	{
+		"id": "GB",
+		"showAsSelected": true
+	},
+	{
+		"id": "VA",
+		"showAsSelected": true
+	},
+	{
+		"id": "CU",
+		"showAsSelected": true
+	},
+	{
+		"id": "US",
+		"showAsSelected": true
+	},
+	{
+		"id": "BO",
+		"showAsSelected": true
+	},
+	{
+		"id": "PE",
+		"showAsSelected": true
+	},
+	{
+		"id": "KH",
+		"showAsSelected": true
+	},
+	{
+		"id": "IQ",
+		"showAsSelected": true
+	},
+	{
+		"id": "OM",
+		"showAsSelected": true
+	},
+	{
+		"id": "SA",
+		"showAsSelected": true
+	},
+	{
+		"id": "TH",
+		"showAsSelected": true
+	},
+	{
+		"id": "AE",
+		"showAsSelected": true
+	},
+	{
+		"id": "VN",
+		"showAsSelected": true
+	}
+]
+},
+areasSettings : {
+autoZoom : true,
+color : "#B4B4B7",
+colorSolid : "#FFCA6E",
+selectedColor : "#FFCA6E",
+outlineColor : "#666666",
+rollOverColor : "#9EC2F7",
+rollOverOutlineColor : "#000000"
+}
+});
+</script>
+<p class="lead"><strong>We have so many miles to go!</strong></p>
+    <p class="lead">I hope that <strong>new memories are coming soon</strong>. In the meanwhile <strong>please come and join <a href="index.html#trio">us</a></strong> virtually to see the most memorable places we've seen.</p>
+    <p class="lead"></p>
+<a class="btn btn-lg btn-primary" href="landscapes.html" role="button">See some landscapes &raquo;</a></div>
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
