@@ -2,10 +2,10 @@
 body {
 	min-height: 75rem;
 	padding-top: 4.5rem;
-	background-image: url(background_p.png), -webkit-linear-gradient(270deg,rgba(168,169,173,1.00) 0%,rgba(95,96,101,1.00) 100%);
-	background-image: url(background_p.png), -moz-linear-gradient(270deg,rgba(168,169,173,1.00) 0%,rgba(95,96,101,1.00) 100%);
-	background-image: url(background_p.png), -o-linear-gradient(270deg,rgba(168,169,173,1.00) 0%,rgba(95,96,101,1.00) 100%);
-	background-image: url(background_p.png), linear-gradient(180deg,rgba(168,169,173,1.00) 0%,rgba(95,96,101,1.00) 100%);
+	background-image: url(https://raw.githubusercontent.com/solid-taylor/Cs50Week8/main/background_p.png), -webkit-linear-gradient(270deg,rgba(168,169,173,1.00) 0%,rgba(95,96,101,1.00) 100%);
+	background-image: url(https://raw.githubusercontent.com/solid-taylor/Cs50Week8/main/background_p.png), -moz-linear-gradient(270deg,rgba(168,169,173,1.00) 0%,rgba(95,96,101,1.00) 100%);
+	background-image: url(https://raw.githubusercontent.com/solid-taylor/Cs50Week8/main/background_p.png), -o-linear-gradient(270deg,rgba(168,169,173,1.00) 0%,rgba(95,96,101,1.00) 100%);
+	background-image: url(https://raw.githubusercontent.com/solid-taylor/Cs50Week8/main/background_p.png), linear-gradient(180deg,rgba(168,169,173,1.00) 0%,rgba(95,96,101,1.00) 100%);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -51,6 +51,10 @@ h1 {
 }
 
 .backtop:hover{
+	color: aliceblue
+}
+
+.backtop:active{
 	color: aliceblue
 }
 
